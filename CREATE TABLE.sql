@@ -1,5 +1,5 @@
-CREATE DATABASE  database_tpms;
-USE database_tpms;
+CREATE DATABASE tpms;
+USE tpms;
 #1
 CREATE TABLE tbl_mst_role
  (
