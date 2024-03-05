@@ -78,9 +78,9 @@ CREATE TABLE   tbl_resource_pool_history
 );
 
 #5
-  CREATE TABLE tbl_resource_upload_history
+  CREATE TABLE tbl_excel_upload_history
  (
-    intResourceFileId  INT PRIMARY KEY AUTO_INCREMENT,
+    intExcelFileId  INT PRIMARY KEY AUTO_INCREMENT,
     vchFileName varchar(96),
     dtmAllocationDate DATETIME,
     intCreatedBy int(4),
@@ -151,7 +151,7 @@ CREATE TABLE tbl_activity_allocation_details
 	intActivityFor int(4),
     vchFromHours varchar(8),
     vchToHours varchar(8),
-    txtActivityDetails varchar(760),
+    txtActivityDetails varchar(760),	=> vchActivityDetails
 	intCreatedBy int(4),
     dtmCreatedOn DATETIME DEFAULT CURRENT_TIMESTAMP,
     intUpdatedBy int(4),
@@ -192,7 +192,7 @@ CREATE TABLE tbl_assessment
     intResourceId  int(4),
 	dtmAsesmentDate DATETIME,
     intActivityId int(4),
-    doubleActivityMark  double(5,2),
+    doubleActivityMark double(5,2),
     doubleSecuredMark double(5,2),
     vchAsesmentHours varchar(8),
     vchRemark varchar(248),
